@@ -13,6 +13,7 @@ dat = transform(dat,
 dat = dat[dat$Date >= as.Date('2007-02-01') & dat$Date <= as.Date('2007-02-02'), ]
 
 par(mfrow=c(1,1))
+par(mar=c(5.1, 5.1, 4.1, 2.1))
 par(cex=0.75)
 plot(dat$Time, dat$Global_active_power, type='l', xlab='', ylab='Global Active Power (kilowatts)')
 dev.copy(png, file='plot2.png', width=480, height=480)

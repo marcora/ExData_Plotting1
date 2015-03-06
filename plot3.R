@@ -13,6 +13,7 @@ dat = transform(dat,
 dat = dat[dat$Date >= as.Date('2007-02-01') & dat$Date <= as.Date('2007-02-02'), ]
 
 par(mfrow=c(1,1))
+par(mar=c(5.1, 5.1, 4.1, 2.1))
 par(cex=0.75)
 plot(dat$Time, dat$Sub_metering_1, type='l', xlab='', ylab='Energy sub metering')
 lines(dat$Time, dat$Sub_metering_2, type='l', col='red')
